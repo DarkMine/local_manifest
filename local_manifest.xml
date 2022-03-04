@@ -17,4 +17,7 @@
         <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996-r_display" revision="twelve" remote="pixel" clone-depth="1" />
         <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom-caf_msm8996-r_media" revision="twelve" remote="pixel" clone-depth="1" />
         <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="DarkMine" revision="12.0-caf" clone-depth="1" />
+        <remote name="krd"
+                 fetch="https://github.com/kdrag0n/" />
+         <project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" remote="krd" revision="master" clone-depth="1" />
 </manifest>
