@@ -11,11 +11,12 @@
         <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_tissot-11" remote="DarkMine" revision="snow" clone-depth="1" />
         
         <remote name="pxl" fetch="https://github.com/PixelExperience/" />
-        
+        <remote name="ub" fetch="https://github.com/ucoboy" />
+
         <remove-project name="android_hardware_qcom_display" />
         <remove-project name="android_hardware_qcom_audio" />
         <remove-project name="android_hardware_qcom_media" />        
-        <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996-r_display" revision="twelve" remote="pxl" clone-depth="1" />
+        <project path="hardware/qcom-caf/msm8996/display" name="R-Hals" groups="pdk,qcom,qcom_display" remote="ub" revision="display-s" />
         <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom-caf_msm8996-r_media" revision="twelve" remote="pxl" clone-depth="1" />
         <remote name="los" fetch="https://github.com/LineageOS" />
         <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="los" revision="lineage-18.1-caf-msm8996" />
